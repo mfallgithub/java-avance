@@ -1,4 +1,4 @@
-package com.mhz;
+package com.exception;
 
 public class MyBankApplication {
     public static void start() {

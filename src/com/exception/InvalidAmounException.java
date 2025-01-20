@@ -1,4 +1,4 @@
-package com.mhz;
+package com.exception;
 //checked ->Exception
 //Unchecked ->RuntimeException
 public class InvalidAmounException extends Exception{

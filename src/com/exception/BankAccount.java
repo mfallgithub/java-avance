@@ -1,4 +1,4 @@
-package com.mhz;
+package com.exception;
 
 public class BankAccount {
     private double balance;
