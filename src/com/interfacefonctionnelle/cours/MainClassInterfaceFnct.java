@@ -2,7 +2,9 @@ package com.interfacefonctionnelle.cours;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
+import java.util.function.IntUnaryOperator;
 import java.util.function.Predicate;
 
 public class MainClassInterfaceFnct {
@@ -68,8 +70,35 @@ public class MainClassInterfaceFnct {
 //        System.out.println(result);
 
         //Using Predicate Interface
-        Predicate<String>hasLengthEven=str->str.length()%2==0;
-        System.out.println(hasLengthEven.test("Hello"));
+        //Predicate<String>hasLengthEven=str->str.length()%2==0;
+        //System.out.println(hasLengthEven.test("Hello"));
+        //combinaison des predicats
+        //Predicate<String> hasLeftParenthese=str->str.startsWith("(");
+        //Predicate<String> hasRightParenthese=str->str.endsWith(")");
+        // &&
+       // Predicate<String> hasParentheses=hasLeftParenthese.and(hasRightParenthese);
+        // ||
+       // Predicate<String>hasAtLeastParenthese=hasLeftParenthese.or(hasRightParenthese);
+        // !
+       // Predicate<String> negate= hasAtLeastParenthese.negate();
+
+        //System.out.println(hasAtLeastParenthese.test("(Hello"));
+       // System.out.println(hasParentheses.test("(Hello"));
+        //System.out.println(negate.test("(Hello"));
+
+        // BinaryOperator
+//        BinaryOperator<Integer> multiply=(a,b)->a*b;
+//        Function<Integer, Integer> multiplyBy10= a-> a*10;
+//        var result= multiply.andThen(multiplyBy10).apply(5,2);
+//        System.out.println(result);
+
+        //UnaryOperator Interface
+
+        IntUnaryOperator cube= a->a*a*a;
+        IntUnaryOperator increment= a->a+1;
+
+        var result= cube.andThen(increment).applyAsInt(5);
+        System.out.println(result);
 
     }
 }

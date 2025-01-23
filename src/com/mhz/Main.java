@@ -1,12 +1,9 @@
 package com.mhz;
 
-import com.interfacefonctionnelle.cours.ConsolePrinter;
-import com.interfacefonctionnelle.cours.MainClassInterfaceFnct;
-import com.interfacefonctionnelle.cours.Printer;
+import com.interfacefonctionnelle.exercice.ExerciceFinaleFunctionalInter;
 
 public class Main {
     public static void main(String[] args) {
-        MainClassInterfaceFnct.usingInterfaceFonctionnelle();
-
+        ExerciceFinaleFunctionalInter.usingInterfaceFunctional();
     }
 }
