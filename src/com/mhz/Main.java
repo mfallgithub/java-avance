@@ -1,10 +1,9 @@
 package com.mhz;
 
-import com.interfacefonctionnelle.exercice.ExerciceFinaleFunctionalInter;
-import com.streams.cours.MainClassStreams;
+import com.streams.exercice.ExerciceFinalStreams;
 
 public class Main {
     public static void main(String[] args) {
-        MainClassStreams.usingStreams();
+        ExerciceFinalStreams.callingMainStream();
     }
 }
