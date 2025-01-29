@@ -23,7 +23,13 @@ public class Task implements Runnable {
 //                break;
 //            System.out.println("Progressing");
 //        }
-        for(int i=0;i<5000;i++)
+//        synchronized (calculator) {
+//            for (int i = 0; i < 5000; i++)
+//                calculator.increment();
+//            calculator.notifyAll();
+//        }
+
+        for (int i = 0; i < 5000; i++)
             calculator.increment();
         System.out.println("Thread finished : " + Thread.currentThread().getName());
 
