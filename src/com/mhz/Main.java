@@ -1,9 +1,9 @@
 package com.mhz;
 
-import com.streams.exercice.ExerciceFinalStreams;
+import com.threads.cours.MainClassThreads;
 
 public class Main {
     public static void main(String[] args) {
-        ExerciceFinalStreams.callingMainStream();
+        MainClassThreads.usingThreads();
     }
 }
